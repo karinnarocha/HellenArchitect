@@ -1,0 +1,113 @@
+/* ------ NAV BARR -----*/
+.navbar {
+    background-color: lightgray;
+    box-shadow:  0px 3px 5px rgba(0,0,0,.3);
+    position: sticky;
+    height: 8vh;
+    z-index: 2;
+}
+.navbarcontainer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+
+.LogoSpace{
+
+    width: 40vw;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    left: 2%;
+}
+
+
+.LogoImage{
+    width: 180px ;
+    height:auto;
+    object-fit: contain;
+    position: relative;
+    top: -45%;
+}
+.LogoImageMain{
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+    position: relative;
+    top: -30%;
+    z-index: -1;
+} 
+.LinksContainer{
+    float: right;
+    height: 8vh;
+    align-content: center;
+    width: 55%;
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8%;
+    padding-right: 10%;
+    font-size: 18px;
+    list-style: none;
+}
+
+.navbar-links a,
+.navbar-links a:visited{
+    text-decoration: none;
+    color: #464444;
+}
+
+
+.dropdownMenuIcon{
+    display: none;
+    float: right;
+}
+
+/*---- creating DROPDOWN-----*/ 
+
+.dropdownMenuIcon{
+    display: none;
+    background: none;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    height: 8vh;
+    border: 0;
+    position: relative;
+}
+
+@media (max-width: 768px){
+
+    .dropdownMenuIcon{
+        display: block;
+        position: relative;
+        z-index: 2;
+        padding-right: 10%;
+
+    }
+    .navbarcontainer{
+        justify-content: space-between;
+        position: relative;
+    }
+    .navbar-links{
+        position: absolute;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: end;
+        text-align: end;
+        right: 5%;
+        top: 15%;
+        transition: transform 0.3s ease-in-out;
+    }
+    .navbar-links.open{
+        display: flex;
+        transform: translateX(100%);
+        left: 0;
+    }
+}
