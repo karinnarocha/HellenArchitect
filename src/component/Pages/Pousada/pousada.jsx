@@ -51,7 +51,7 @@ const PiscinaSlide = [
 ];
 
 const Quartos = [
-    {src: "/images/Pousada/QUARTOS/QUARTO_1/01.webp", title: "Quartos", index: 0},
+    {src: "/images/Pousada/QUARTOS/QUARTO_1/01.webp", title: "Quartos", link:"/Quartos_pousada" },
 ];
 
 

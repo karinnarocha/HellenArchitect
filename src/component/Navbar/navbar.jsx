@@ -33,7 +33,7 @@ return (
         <div className='navbarcontainer'>
             <div className='LogoSpace'>
                 {isMainPage ? (
-                    <img className='LogoImageMain  animate__animated  animate__zoomIn'  src={'/images/full_Logo.webp'} alt = "Logo"/>
+                    <img className='LogoImageMain  animate__animated  animate__zoomIn'  src={'/images/full_Logo.png'} alt = "Logo"/>
                 ) : ( < Link to='/' onClick={() => setIsOpen(false)}> <img className='LogoImage' src={'/images/logo_cinza.webp'} alt = "HellenLogo"/> </Link>)}    
             </div>
         </div>

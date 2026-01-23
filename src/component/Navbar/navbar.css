@@ -14,14 +14,13 @@
 
 
 .LogoSpace{
-
     width: 40vw;
     max-height: 350px;
     display: flex;
     justify-content: center;
     position: relative;
     overflow: visible;
-    left: 2%;
+    left: 1%;
 }
 
 

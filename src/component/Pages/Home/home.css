@@ -2,22 +2,65 @@
 .homeTitle{
     text-align: center;
     font-family: "Italiana";
-    font-size: clamp(1.8rem, 10vw, 8rem);
+    font-size: clamp(1rem, 6vw,5rem);
     margin-top: 2%;
     font-weight: 600;
     color: #333333;
-    padding: 10% 10% 0 10% ;
+    padding: 5% 10%  0 10% ;
     letter-spacing: 0.1em;
 }
 .homeSubtitle{
     text-align: center;
     font-family: "Italiana";
-    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-size: clamp(0.8rem, 3vw, 2rem);
     margin-top: 1%;
     font-weight: 600;
     color: #666666;
     letter-spacing: 0.1em;
     height: auto;
+}
+.CTAsection{
+    height: 80vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-image: url("/public/images/mainpage/background.png");
+    background-size: cover;
+    background-color: #e4e3e3d7;
+}
+.slideContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap:10%;
+    padding: 5% 15% 5% 15%;
+}
+ 
+.Meetsection{
+    height: 80vh;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-content: center;
+}
+.background_image{
+    background-image: url("/public/images/Sobre/nobackground.png");
+    background-size: cover;
+    background-position:  center top;
+    width: 100%;
+}
+.QuoteSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.Quote{
+    width: 60%;
+    text-align: center;
+    font-family: "Italiana";
+    font-size: 22px;
 }
 /* ------ GRID DISPLAY -----*/
 
@@ -26,9 +69,10 @@
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(4, AUTO) ;
     gap:5%;
-    padding: 10% 25% 10% 25%;
+    padding: 5% 20% 5% 20%;
     
 }
+
 
 /* ------ GRID PHOTOS  -----*/
 
@@ -86,6 +130,5 @@
 @media screen and (max-width: 800px){
     .imageGridHome {
         padding: 10% 5% 10% 5%;
-    
 }
 }

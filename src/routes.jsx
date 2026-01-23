@@ -15,8 +15,12 @@ import Quarto_Master from "./component/Pages/Interiores/Quartos/Master/master";
 import Quarto_Menina from "./component/Pages/Interiores/Quartos/Menina/menina";
 import Quarto_Menino from "./component/Pages/Interiores/Quartos/Menino/menino";
 import Pousada from "./component/Pages/Pousada/pousada";
-
-
+import QuartosPousada from "./component/Pages/Pousada/Quartos_pousada/Suite_Comun/Quartos_pousada";
+import Cozinha from "./component/Pages/Interiores/Cozinha/cozinha";
+import Escritorio from "./component/Pages/Interiores/Escritorio/escritorio";
+import Sala from "./component/Pages/Interiores/Sala/sala";
+import Outros from "./component/Pages/Interiores/Outros/outros"; 
+import Area_de_Servico from "./component/Pages/Interiores/Outros/Area_de_Servico/area_de_servico";
 
 const PagesRoutes = () => {
     return (
@@ -36,6 +40,12 @@ const PagesRoutes = () => {
                 <Route path="/Quarto_Menina" element={<Quarto_Menina/>}/>
                 <Route path="/Quarto_Menino" element={<Quarto_Menino/>}/>
                 <Route path="/Pousada" element={<Pousada/>}/>
+                <Route path="/Quartos_pousada" element={<QuartosPousada/>}/>
+                <Route path="/Cozinha" element={<Cozinha/>}/>
+                <Route path="/Escritorio" element={<Escritorio/>}/>
+                <Route path="/Sala" element={<Sala/>}/>
+                <Route path="/Outros" element={<Outros/>}/>
+                <Route path="/Area_de_Servico" element={<Area_de_Servico/>}/>
             </Routes>
             <Footer/>
         </Router>
