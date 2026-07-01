@@ -3,95 +3,91 @@ import React from "react";
 import Hero from "../../Hero/hero";
 import ImageSlide from "../../SlideShow/slide";
 import ImagesGrid from "../../ImagesGrid/imagesGrid";
+import { Link } from "react-router-dom";
 
+import "./mostras.css";
 
-import "./pousada.css";
-
-const Hero_Pousada =[
-     {src: "images/Pousada/FACHADA/03.webp", title:"Pousada" },
+const Hero_Mostras =[
+     {src: "images/Mostras/CANTO_ENCANTO_2016/02.webp", title:"Mostras" },
 ];
 
-const FachadaSlide = [
-    {src: "images/Pousada/FACHADA/02.webp", title: "Fachada 2", index: 1},
-    {src: "images/Pousada/FACHADA/01.webp", title: "Fachada 1", index: 0},
-    {src: "images/Pousada/FACHADA/03.webp", title: "Fachada 3", index: 2},
-    {src: "images/Pousada/FACHADA/04.webp", title: "Fachada 4", index: 3},
-    {src: "images/Pousada/FACHADA/05.webp", title: "Fachada 5", index: 4},
+const CANTO_ENCANTO_2015 = [
+    {src: "images/Mostras/CANTO_ENCANTO_2015/01.webp", title: "CANTO_ENCANTO_2015", index: 0},
+    {src: "images/Mostras/CANTO_ENCANTO_2015/02.webp", title: "CANTO_ENCANTO_2015", index: 1},
+    {src: "images/Mostras/CANTO_ENCANTO_2015/03.webp", title: "CANTO_ENCANTO_2015", index: 2},
 ];
 
-const RooftopSlide = [
-    {src: "images/Pousada/ROOFTOP/01.webp", title: "Rooftop 1", index: 0},
-    {src: "images/Pousada/ROOFTOP/02.webp", title: "Rooftop 2", index: 1},
-    {src: "images/Pousada/ROOFTOP/03.webp", title: "Rooftop 3", index: 2},
-    {src: "images/Pousada/ROOFTOP/04.webp", title: "Rooftop 4", index: 3},
-    {src: "images/Pousada/ROOFTOP/05.webp", title: "Rooftop 5", index: 4},
+const CANTO_ENCANTO_2016 = [
+    {src: "images/Mostras/CANTO_ENCANTO_2016/01.webp", title: "CANTO_ENCANTO_2016", index: 0},
+    {src: "images/Mostras/CANTO_ENCANTO_2016/02.webp", title: "CANTO_ENCANTO_2016", index: 1},
+    {src: "images/Mostras/CANTO_ENCANTO_2016/03.webp", title: "CANTO_ENCANTO_2016", index: 2},
+    {src: "images/Mostras/CANTO_ENCANTO_2016/04.webp", title: "CANTO_ENCANTO_2016", index: 3},
 ];
 
-const LavaboSlide = [
-    {src: "images/Pousada/LAVABO/01.webp", title: "Rooftop 1", index: 0},
-    {src: "images/Pousada/LAVABO/02.webp", title: "Rooftop 2", index: 1},
-
+const Canto_Encanto_2017 = [
+    {src: "images/Mostras/Canto_Encanto_2017/01.webp", title: "Canto_Encanto_2017", index: 0},
+    {src: "images/Mostras/Canto_Encanto_2017/02.webp", title: "Canto_Encanto_2017", index: 1},
+    {src: "images/Mostras/Canto_Encanto_2017/03.webp", title: "Canto_Encanto_2017", index: 2},
+    {src: "images/Mostras/Canto_Encanto_2017/04.webp", title: "Canto_Encanto_2017", index: 3},
 ];
-const InteriorSlide = [
-    {src: "images/Pousada/INTERIOR/01.webp", title: "Interior 1", index: 0},
-    {src: "images/Pousada/INTERIOR/02.webp", title: "Interior 2", index: 1},
-    {src: "images/Pousada/INTERIOR/03.webp", title: "Interior 3", index: 2},
-    {src: "images/Pousada/INTERIOR/04.webp", title: "Interior 4", index: 3},
-    {src: "images/Pousada/INTERIOR/05.webp", title: "Interior 5", index: 5},
-    {src: "images/Pousada/INTERIOR/06.webp", title: "Interior 6", index: 6},
-    {src: "images/Pousada/INTERIOR/07.webp", title: "Interior 6", index: 7},
-    {src: "images/Pousada/INTERIOR/08.webp", title: "Interior 7", index: 8},
+const CANTO_ENCANTO_2018 = [
+    {src: "images/Mostras/CANTO_ENCANTO_2018/01.webp", title: "CANTO_ENCANTO_2018", index: 0},
+    {src: "images/Mostras/CANTO_ENCANTO_2018/02.webp", title: "CANTO_ENCANTO_2018", index: 1},
+    {src: "images/Mostras/CANTO_ENCANTO_2018/03.webp", title: "CANTO_ENCANTO_2018", index: 2},
 ];
 
-const PiscinaSlide = [
-    {src: "images/Pousada/PISCINA/01.webp", title: "Piscina 1", index: 0},
-    {src: "images/Pousada/PISCINA/02.webp", title: "Piscina 2", index: 1},
-    {src: "images/Pousada/PISCINA/03.webp", title: "Piscina 3", index: 2},
-
+const CASA_COR_2012 = [
+    {src: "images/Mostras/CASA_COR_2012/01.webp", title: "CASA_COR_2012", index: 0},
+    {src: "images/Mostras/CASA_COR_2012/02.webp", title: "CASA_COR_2012", index: 1},
+    {src: "images/Mostras/CASA_COR_2012/03.webp", title: "CASA_COR_2012", index: 2},
 ];
 
-const Quartos = [
-    {src: "/images/Pousada/QUARTOS/QUARTO_1/01.webp", title: "Quartos", index: 0},
+const DECORA_LIDER_2016 = [
+    {src: "images/Mostras/DECORA_LIDER_2016/01.webp", title: "DECORA_LIDER_2016", index: 0},
+    {src: "images/Mostras/DECORA_LIDER_2016/02.webp", title: "DECORA_LIDER_2016", index: 1},
+    {src: "images/Mostras/DECORA_LIDER_2016/03.webp", title: "DECORA_LIDER_2016", index: 2},
+    {src: "images/Mostras/DECORA_LIDER_2016/04.webp", title: "DECORA_LIDER_2016", index: 3},
+    {src: "images/Mostras/DECORA_LIDER_2016/05.webp", title: "DECORA_LIDER_2016", index: 4},
+    {src: "images/Mostras/DECORA_LIDER_2016/06.webp", title: "DECORA_LIDER_2016", index: 5},
+    {src: "images/Mostras/DECORA_LIDER_2016/07.webp", title: "DECORA_LIDER_2016", index: 6},
 ];
 
 
-const Pousada = () => {
+
+const Mostras = () => {
     return (
         <>
-            <Hero image={Hero_Pousada[0]} />
-  <div className="imageGridPousada">
+            <Hero image={Hero_Mostras[0]} />
+  <div className="imageGridMostras">
     <div className="imageContainer">
-      <span className="imageOverlayTitle">Fachada</span>
-      <ImageSlide slides={FachadaSlide} />
+      <ImageSlide label="CANTO_ENCANTO_2015" slides={CANTO_ENCANTO_2015} />
     </div>
 
     <div className="imageContainer">
-      <span className="imageOverlayTitle">Rooftop</span>
-      <ImageSlide slides={RooftopSlide} />
+      <ImageSlide label="CANTO_ENCANTO_2016" slides={CANTO_ENCANTO_2016} />
     </div>
 
     <div className="imageContainer">
-      <span className="imageOverlayTitle" >Lavabo</span>
-      <ImageSlide slides={LavaboSlide}/>
+      <ImageSlide label="CANTO_ENCANTO_2017" slides={Canto_Encanto_2017} />
     </div>
 
     <div className="imageContainer">
-      <span className="imageOverlayTitle">Interior</span>
-      <ImageSlide slides={InteriorSlide} />
+      <ImageSlide label="CANTO_ENCANTO_2018" slides={CANTO_ENCANTO_2018} />
     </div>
 
     <div className="imageContainer">
-      <span className="imageOverlayTitle">Piscina</span>
-      <ImageSlide slides={PiscinaSlide} />
+      <ImageSlide label="CASA_COR_2012" slides={CASA_COR_2012} />
     </div>
-
+    
     <div className="imageContainer">
-      <span className="imageOverlayTitle">Quartos</span>
-      <ImagesGrid images={Quartos} />
+      <ImageSlide label="DECORA_LIDER_2016" slides={DECORA_LIDER_2016} />
     </div>
   </div>
+   <div className="central">
+        <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
+      </div>
         </>
 
     );
 };
-export default Pousada;
+export default Mostras;

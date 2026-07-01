@@ -2,6 +2,8 @@ import "./sala.css";
 import Hero from "../../../Hero/hero";
 import ImageSlide from "../../../SlideShow/slide";
 
+import { Link } from "react-router-dom";
+
 const Hero_Sala = [
     {src:"/images/interior/Sala/01/02.webp", title: "Sala de Estar"},
 ];
@@ -83,6 +85,9 @@ const Sala = () => {
             <ImageSlide label="" slides={Sala7}/>
             <ImageSlide label="" slides={Sala8}/>
             <ImageSlide label="" slides={Sala9}/>
+        </div>
+        <div className="central">
+          <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
         </div>
         </>
     );

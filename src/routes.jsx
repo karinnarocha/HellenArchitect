@@ -21,6 +21,7 @@ import Escritorio from "./component/Pages/Interiores/Escritorio/escritorio";
 import Sala from "./component/Pages/Interiores/Sala/sala";
 import Outros from "./component/Pages/Interiores/Outros/outros"; 
 import Area_de_Servico from "./component/Pages/Interiores/Outros/Area_de_Servico/area_de_servico";
+import Mostras from "./component/Pages/Mostras/mostras";
 
 const PagesRoutes = () => {
     return (
@@ -46,6 +47,7 @@ const PagesRoutes = () => {
                 <Route path="/Sala" element={<Sala/>}/>
                 <Route path="/Outros" element={<Outros/>}/>
                 <Route path="/Area_de_Servico" element={<Area_de_Servico/>}/>
+                <Route path="/Mostras" element={<Mostras/>}/>
             </Routes>
             <Footer/>
         </Router>

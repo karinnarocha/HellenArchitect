@@ -1,6 +1,7 @@
 import React from "react";
 import "./sobre.css";
 import Hero from "../../Hero/hero";
+import { Link } from "react-router-dom";
 
 const Hero_Sobre = [
     {src:"../../images/Sobre/Hero_Sobre.webp", title: "Sobre"}
@@ -22,6 +23,9 @@ const Sobre = () => {
                     <div className="sobreContentRow">
                         <img  className="photosSobre" src="../../images/Sobre/Hellen_photo2.webp" alt="Hellen two" />
                         <div className="textSobre">Mas vamos destacar aqui duas coisas que não abro mão: praticidade e identidade, que, para mim, estão nos detalhes! Sou uma pessoa observadora, com o olhar treinado! Gosto de fazer uma leitura das pessoas antes de começar qualquer projeto, porque assim consigo transmitir o que o cliente realmente precisa. Sempre vou bater na tecla que o nosso comportamento, roupas, como falamos, para onde gostamos de viajar e descansar mostram mais da gente do que o podemos imaginar, e, para conseguir entender essa linguagem não verbal, me aprofundei no estudo de coach, comportamento e conexão! Em cada reunião, vamos trazendo CLAREZA e construindo o que realmente o cliente quer e precisa dentro de casa. Projetos únicos que conectam e emocionam!</div>
+                    </div>
+                    <div className="central">
+                        <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
                     </div>
                     <img className="logo"src="../../images/interior_logo.webp" alt=""/>
                 </div>

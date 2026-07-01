@@ -4,6 +4,7 @@ import Hero from "../../Hero/hero";
 import ImageSlide from "../../SlideShow/slide";
 import ImagesGrid from "../../ImagesGrid/imagesGrid";
 
+import { Link } from "react-router-dom";
 
 import "./pousada.css";
 
@@ -66,6 +67,10 @@ const Pousada = () => {
         <ImageSlide label="Interior" slides={InteriorSlide} />
         <ImageSlide label="Piscina" slides={PiscinaSlide} />
         <ImagesGrid  images={Quartos} />
+      </div>
+
+      <div className="central">
+        <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
       </div>
     </>
   );

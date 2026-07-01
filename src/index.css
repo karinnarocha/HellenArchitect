@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -7,7 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Laviossa';
+  color: #464444;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,8 +31,4 @@ code {
   src: url(./assets/font/Italiana-Regular.ttf) format('opentype');
   font-weight: normal;
   font-style: normal;
-}
-body{
-  font-family: 'Laviossa' ;
-  color: #464444;
 }

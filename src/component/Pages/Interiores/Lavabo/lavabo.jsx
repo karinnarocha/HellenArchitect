@@ -3,6 +3,7 @@ import "./lavabo.css";
 import Hero from "../../../Hero/hero";
 import ImagesGrid from "../../../ImagesGrid/imagesGrid";
 
+import { Link } from "react-router-dom";    
 
 const Hero_Lavabo = [
     {src:"images/LAVABO/LAVABO_HERO.webp", title:"Lavabo"},
@@ -22,6 +23,9 @@ const Lavabo = () => {
             <div className="GridContainer"> 
                 <ImagesGrid images={lavaboGrid} wrapperClassName="imageGridLavabo"/>
             </div> 
+            <div className="central">
+                <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
+            </div>
         </>
     );
 };

@@ -1,17 +1,52 @@
-/* ------ NAV BARR -----*/
+/* ------ NAV BAR ----- */
+
 .navbar {
     background-color: lightgray;
-    box-shadow:  0px 3px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
     position: sticky;
+    top: 0;
     height: 8vh;
     z-index: 2;
+
+    /* NEW */
+    padding-top: 60px; /* space for contact button */
+    position: relative;
 }
+
+/* ===== TOP CONTACT BUTTON ===== */
+
+.contactTop {
+    position: absolute;
+    display: flex;
+    top: 8px;
+    right: 40px;
+}
+
+.contactBtn {
+    background-color: #8b6b5c;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin: 20px;
+}
+
+.contactBtn:hover {
+    opacity: 0.9;
+}
+
+
+/* ------ NAVBAR CONTAINER ----- */
+
 .navbarcontainer{
     display: flex;
     flex-direction: row;
     width: 100vw;
 }
 
+/* ------ LOGO ----- */
 
 .LogoSpace{
     width: 40vw;
@@ -23,27 +58,29 @@
     left: 1%;
 }
 
-
 .LogoImage{
-    width: 180px ;
-    height:auto;
+    height: auto;
     object-fit: contain;
     position: relative;
     top: -45%;
+    width: 15vw;
 }
+
 .LogoImageMain{
     width: 100%;
-    height:auto;
+    height: auto;
     object-fit: contain;
     position: relative;
     top: -30%;
     z-index: -1;
-} 
+}
+
+/* ------ LINKS ----- */
+
 .LinksContainer{
     float: right;
     height: 8vh;
     align-content: center;
-    width: 55%;
 }
 
 .navbar-links{
@@ -51,9 +88,10 @@
     flex-direction: row;
     justify-content: center;
     gap: 8%;
-    padding-right: 10%;
-    font-size: 18px;
+    padding-right: 50%;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
     list-style: none;
+    transform: translateX(0);
 }
 
 .navbar-links a,
@@ -62,51 +100,99 @@
     color: #464444;
 }
 
-
-.dropdownMenuIcon{
-    display: none;
-    float: right;
-}
-
-/*---- creating DROPDOWN-----*/ 
+/* -------- DROPDOWN BUTTON (☰) -------- */
 
 .dropdownMenuIcon{
     display: none;
     background: none;
     cursor: pointer;
-    flex-direction: row;
-    align-items: center;
-    height: 8vh;
     border: 0;
+    height: 8vh;
+    float: right;
+}
+
+/* -------- INTERIORES DROPDOWN -------- */
+
+.dropdown {
     position: relative;
 }
 
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #464444;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: lightgray;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 180px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.2);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #464444;
+}
+
+/* -------- MOBILE -------- */
+
 @media (max-width: 768px){
+    .LogoSpace{
+    width: 100vw;
+}
+    .contactTop {
+        right: 20px;
+        top: 10px;
+    }
+
+    .contactBtn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
 
     .dropdownMenuIcon{
         display: block;
-        position: relative;
-        z-index: 2;
         padding-right: 10%;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-    }
-    .navbarcontainer{
-        justify-content: space-between;
-        position: relative;
-    }
     .navbar-links{
-        position: absolute;
-        width: 100vw;
-        flex-direction: column;
-        justify-content: end;
-        text-align: end;
-        right: 5%;
-        top: 15%;
-        transition: transform 0.3s ease-in-out;
-    }
-    .navbar-links.open{
+        position: fixed;
+        top: 6vh;
+        right: 0; 
+        background: lightgray;
         display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 40px 25px;
+        gap: 25px;
         transform: translateX(100%);
-        left: 0;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000 !important;
+    }
+
+    .navbar-links.open{
+        transform: translateX(0);
+    }
+
+    .dropdown-menu{
+        position: relative;
+        box-shadow: none;
     }
 }

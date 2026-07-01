@@ -2,6 +2,8 @@ import "./escritorio.css";
 import Hero from "../../../Hero/hero";
 import ImageSlide from "../../../SlideShow/slide";
 
+import { Link } from "react-router-dom";
+
 const Hero_Escritorio = [
     {src:"/images/interior/Escritorio/Escritorio2/04.webp", title: "Escritório"},
 ];
@@ -40,6 +42,9 @@ const Escritorio = () => {
                 <ImageSlide label="Escritorio 3" slides={Escritorio3}/>
                 <ImageSlide label="Escritorio 4 " slides={Escritorio4}/>
             </div>
+            <div className="central">
+                        <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
+                    </div>
         </>
     );
 }   
