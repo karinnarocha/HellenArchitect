@@ -5,7 +5,6 @@
     align-items: center;
 }
 
-
 .imageGridArquitetura {
     display: grid;
     grid-template-columns: repeat(2, 3fr);
@@ -13,7 +12,6 @@
     gap: 10%;
     padding: 15% 15% 10% 15%;
 }
-
 
 /* ------ BUTTON CSS  -----*/
 
@@ -32,11 +30,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 @media screen and (max-width: 800px) {
     .imageGridArquitetura {
-        padding: 20% 5% 10% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8%;
+        padding: 12% 5% 6% 5%;
+    }
+
+    .imageGridArquitetura .slideStyle {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .imageGridArquitetura .ImageSlides {
+        height: 20vh;
     }
 }

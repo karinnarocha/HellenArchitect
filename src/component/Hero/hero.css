@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 800px) {
     .Hero-section {
-        height: 70vh;
+        height: 50vh;
     }
 
     .Hero-overlay {
