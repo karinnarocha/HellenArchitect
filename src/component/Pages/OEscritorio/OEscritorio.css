@@ -55,11 +55,16 @@
 
 @media screen and (max-width: 800px) {
     .Escritorio-hero {
-        height: 70vh;
+        height: 50vh;
     }
 
     .Escritorio-heroOverlay {
         padding: 0 6% 8%;
+    }
+
+    .Escritorio-slide {
+        width: 80%;
+
     }
 }
 

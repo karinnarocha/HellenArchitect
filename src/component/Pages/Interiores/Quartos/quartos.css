@@ -1,6 +1,14 @@
-.imageGridQuartos{
+.imageGridQuartos {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    padding: 15% 25% 15%;
+    padding: 10% 25% 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .imageGridQuartos {
+        display: flex;
+        justify-self: center;
+        width: 80%;
+    }
 }

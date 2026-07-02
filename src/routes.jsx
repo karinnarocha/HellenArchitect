@@ -6,7 +6,7 @@ import Home from "./component/Pages/Home/Home.jsx";
 import Interior from "./component/Pages/Interiores/Interiores.jsx";
 import Sobre from "./component/Pages/Sobre/Sobre.jsx";
 import Arquitetura from "./component/Pages/Arquitetura/Arquitetura.jsx";
-import O_Escritorio from "./component/Pages/OEscritorio/OEscritorio";
+import OEscritorio from "./component/Pages/OEscritorio/OEscritorio";
 import Lavabo from "./component/Pages/Interiores/Lavabo/Lavabo.jsx";
 import AreaGourmet from "./component/Pages/Interiores/AreaGourmet/AreaGourmet.jsx";
 import Contato from "./component/Pages/Contato/Contato";
@@ -32,7 +32,7 @@ const PagesRoutes = () => {
                 <Route path="/interiores" element={<Interior />} />
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/Arquitetura" element={<Arquitetura />} />
-                <Route path="/Escritório" element={<O_Escritorio />} />
+                <Route path="/OEscritorio" element={<OEscritorio />} />
                 <Route path="/Gourmet" element={<AreaGourmet />} />
                 <Route path="/lavabo" element={<Lavabo />} />
                 <Route path="/Contato" element={<Contato />} />

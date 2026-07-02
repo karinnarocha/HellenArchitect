@@ -68,7 +68,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/Escritório" onClick={() => setIsOpen(false)}>
+            <Link to="/OEscritorio" onClick={() => setIsOpen(false)}>
               Escritório
             </Link>
           </li>
