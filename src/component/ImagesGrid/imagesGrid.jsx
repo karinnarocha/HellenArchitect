@@ -1,6 +1,6 @@
 // src/component/ImagesGrid/imagesGrid.jsx
 import React from "react";
-import "./imagesGrid.css";
+import "./ImagesGrid.css";
 import { Link } from "react-router-dom";
 
 const ImagesGrid = ({ images, wrapperClassName }) => {

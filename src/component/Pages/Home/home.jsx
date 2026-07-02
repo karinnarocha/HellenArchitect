@@ -1,8 +1,8 @@
 import React from "react";
-import "./home.css";
-import Hero from "../../Hero/hero";
-import ImageGrid from "../../ImagesGrid/imagesGrid";
-import ImageSlide from "../../SlideShow/slide";
+import "./Home.css";
+import Hero from "../../Hero/Hero";
+import ImageGrid from "../../ImagesGrid/ImagesGrid";
+import ImageSlide from "../../SlideShow/Slide";
 import '/node_modules/animate.css/animate.css';
 import { Link } from "react-router-dom";
 

@@ -1,11 +1,10 @@
 
 import React from "react";
-import Hero from "../../Hero/hero";
-import ImageSlide from "../../SlideShow/slide";
-import ImagesGrid from "../../ImagesGrid/imagesGrid";
+import Hero from "../../Hero/Hero";
+import ImageSlide from "../../SlideShow/Slide";
 import { Link } from "react-router-dom";
 
-import "./mostras.css";
+import "./Mostras.css";
 
 const Hero_Mostras = [
   { src: "images/Mostras/CANTO_ENCANTO_2016/02.webp", title: "Mostras" },

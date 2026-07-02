@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./arquitetura.css";
-import Hero from "../../Hero/hero";
-import ImageSlide from "../../SlideShow/slide";
+import "./Arquitetura.css";
+import Hero from "../../Hero/Hero";
+import ImageSlide from "../../SlideShow/Slide";
 
 
 const Hero_Arquitetura = [

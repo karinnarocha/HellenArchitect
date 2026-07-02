@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import "./master.css";
-import Hero from "../../../../Hero/hero";
-import ImageSlide from "../../../../SlideShow/slide";
+import "./Master.css";
+import Hero from "../../../../Hero/Hero";
+import ImageSlide from "../../../../SlideShow/Slide";
 
 const Hero_QuartoMaster = [
     { src: "images/Quartos/Hero_QuartoPage.webp", title: "Quartos Master" },

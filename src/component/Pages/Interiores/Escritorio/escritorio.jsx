@@ -1,6 +1,6 @@
-import "./escritorio.css";
-import Hero from "../../../Hero/hero";
-import ImageSlide from "../../../SlideShow/slide";
+import "./Escritorio.css";
+import Hero from "../../../Hero/Hero";
+import ImageSlide from "../../../SlideShow/Slide";
 
 import { Link } from "react-router-dom";
 

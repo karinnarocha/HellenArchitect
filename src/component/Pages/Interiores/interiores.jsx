@@ -1,7 +1,7 @@
 import React from "react";
-import "./interiores.css";
-import Hero from "../../Hero/hero";
-import ImagesGrid from "../../ImagesGrid/imagesGrid";
+import "./Interiores.css";
+import Hero from "../../Hero/Hero";
+import ImagesGrid from "../../ImagesGrid/ImagesGrid";
 
 import { Link } from "react-router-dom";
 

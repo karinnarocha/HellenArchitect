@@ -1,49 +1,50 @@
-import React, {useState} from "react";
-import "./slide.css";
+import React, { useState } from "react";
+import "./Slide.css";
 
 
-const ImageSlide = ({slides, label}) => {
+const ImageSlide = ({ slides, label }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPhotoOpen, setIsPhotoOpen] = useState(false);
 
 
 
-    const previousImage = () =>{
+    const previousImage = () => {
         const firstSlide = currentIndex === 0;
         const nextSlide = firstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(nextSlide)
-        };
+    };
 
-    const NextImage = () =>{
+    const NextImage = () => {
         const lastSlide = currentIndex === slides.length - 1;
-        const nextSlide = lastSlide ? 0 : currentIndex + 1; 
+        const nextSlide = lastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(nextSlide)
-        };
+    };
 
     const openPhoto = () => setIsPhotoOpen(true);
     const closePhoto = (e) => {
-        if (e.target === e.currentTarget) { setIsPhotoOpen(false);
+        if (e.target === e.currentTarget) {
+            setIsPhotoOpen(false);
         }
     };
-    
+
 
     return (
         <>
-        <div className="slideStyle">
-             {label && <div className="slideLabel">{label}</div>}
-            <div className="previousSlide" onClick={previousImage}>❰</div>
-            <img
-                src={slides[currentIndex].src}
-                alt={slides[currentIndex].title}
-                className="ImageSlides"
-                onClick={openPhoto}
-                style={{cursor:"pointer"}}
-            />
-            <div className="nextSlide" onClick={NextImage}>❱</div>
-        </div>
+            <div className="slideStyle">
+                {label && <div className="slideLabel">{label}</div>}
+                <div className="previousSlide" onClick={previousImage}>❰</div>
+                <img
+                    src={slides[currentIndex].src}
+                    alt={slides[currentIndex].title}
+                    className="ImageSlides"
+                    onClick={openPhoto}
+                    style={{ cursor: "pointer" }}
+                />
+                <div className="nextSlide" onClick={NextImage}>❱</div>
+            </div>
 
-        {isPhotoOpen && (
-            <div className="backgroundPhotoPopup" onClick={closePhoto}>
+            {isPhotoOpen && (
+                <div className="backgroundPhotoPopup" onClick={closePhoto}>
                     <div className="previousSlide" onClick={previousImage}>❰</div>
                     <img
                         src={slides[currentIndex].src}
@@ -51,10 +52,10 @@ const ImageSlide = ({slides, label}) => {
                         className="Photopopup"
                     />
                     <div className="nextSlide" onClick={NextImage}>❱</div>
-                </div>  
-        )}
+                </div>
+            )}
         </>
-        );
+    );
 };
 
 export default ImageSlide;

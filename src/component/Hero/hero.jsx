@@ -1,5 +1,5 @@
 import React from "react";
-import './hero.css';
+import './Hero.css';
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import '/node_modules/animate.css/animate.css';
 

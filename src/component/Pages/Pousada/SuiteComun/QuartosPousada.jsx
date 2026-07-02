@@ -1,7 +1,7 @@
 import React from "react";
 import "./QuartosPousada.css";
-import Hero from "../../../Hero/hero";
-import ImageSlide from "../../../SlideShow/slide";
+import Hero from "../../../Hero/Hero";
+import ImageSlide from "../../../SlideShow/Slide";
 
 
 const Hero_Pousada_Quartos = [

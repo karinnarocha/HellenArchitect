@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-import "./cozinha.css";
-import Hero from "../../../Hero/hero";
-import ImageSlide from "../../../SlideShow/slide";
+import "./Cozinha.css";
+import Hero from "../../../Hero/Hero";
+import ImageSlide from "../../../SlideShow/Slide";
 
 const Hero_Cozinha = [
     { src: "/images/interior/Cozinha/Cozinha1/01.webp", title: "Cozinha" },

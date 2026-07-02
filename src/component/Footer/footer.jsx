@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./footer.css";
+import "./Footer.css";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
@@ -24,9 +24,9 @@ const Footer = () => {
             <a href="/Sobre" className="footer-link">Sobre</a>
             <a href="/Nosso Escritório" className="footer-link">Nosso Escritório</a>
           </div>
-            <p>
-             "Casas que sustentam a vida — não só a estética."
-            </p>
+          <p>
+            "Casas que sustentam a vida — não só a estética."
+          </p>
         </div>
 
         {/* RIGHT SIDE (Contact) */}

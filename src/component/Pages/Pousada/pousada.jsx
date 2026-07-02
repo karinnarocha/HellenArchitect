@@ -1,12 +1,12 @@
 
 import React from "react";
-import Hero from "../../Hero/hero";
-import ImageSlide from "../../SlideShow/slide";
-import ImagesGrid from "../../ImagesGrid/imagesGrid";
+import Hero from "../../Hero/Hero";
+import ImageSlide from "../../SlideShow/Slide";
+import ImagesGrid from "../../ImagesGrid/ImagesGrid";
 
 import { Link } from "react-router-dom";
 
-import "./pousada.css";
+import "./Pousada.css";
 
 const Hero_Pousada = [
   { src: "images/Pousada/FACHADA/03.webp", title: "Pousada" },

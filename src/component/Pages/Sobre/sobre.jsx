@@ -1,6 +1,6 @@
 import React from "react";
-import "./sobre.css";
-import Hero from "../../Hero/hero";
+import "./Sobre.css";
+import Hero from "../../Hero/Hero";
 import { Link } from "react-router-dom";
 
 const Hero_Sobre = [

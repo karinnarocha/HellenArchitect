@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import "./areaDeServico.css";
-import Hero from "../../../../Hero/hero";
-import ImageSlide from "../../../../SlideShow/slide";
+import "./AreaDeServico.css";
+import Hero from "../../../../Hero/Hero";
+import ImageSlide from "../../../../SlideShow/Slide";
 
 const Hero_Area_de_Servico = [
     { src: "images/interior/Outros/Area_de_servico/04/02.webp", title: "Area de Serviço" },

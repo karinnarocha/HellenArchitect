@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import "./menino.css";
-import Hero from "../../../../Hero/hero";
-import ImageSlide from "../../../../SlideShow/slide";
+import "./Menino.css";
+import Hero from "../../../../Hero/Hero";
+import ImageSlide from "../../../../SlideShow/Slide";
 
 const Hero_QuartoMenino = [
     { src: "images/Quartos/Hero_QuartoPage.webp", title: "Quarto Menino" },

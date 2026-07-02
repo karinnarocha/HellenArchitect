@@ -1,27 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Nav from "./component/Navbar/navbar";
-import Footer from "./component/Footer/footer"
-import Home from "./component/Pages/Home/home";
-import Interior from "./component/Pages/Interiores/interiores";
-import Sobre from "./component/Pages/Sobre/sobre";
-import Arquitetura from "./component/Pages/Arquitetura/arquitetura";
+import Nav from "./component/Navbar/Navbar";
+import Footer from "./component/Footer/Footer"
+import Home from "./component/Pages/Home/Home.jsx";
+import Interior from "./component/Pages/Interiores/Interiores.jsx";
+import Sobre from "./component/Pages/Sobre/Sobre.jsx";
+import Arquitetura from "./component/Pages/Arquitetura/Arquitetura.jsx";
 import O_Escritorio from "./component/Pages/OEscritorio/OEscritorio";
-import Lavabo from "./component/Pages/Interiores/Lavabo/lavabo";
-import AreaGourmet from "./component/Pages/Interiores/AreaGourmet/areaGourmet";
-import Contato from "./component/Pages/Contato/contato";
-import Quartos from "./component/Pages/Interiores/Quartos/quartos";
-import Quarto_Master from "./component/Pages/Interiores/Quartos/Master/master";
-import Quarto_Menina from "./component/Pages/Interiores/Quartos/Menina/menina";
-import Quarto_Menino from "./component/Pages/Interiores/Quartos/Menino/menino";
-import Pousada from "./component/Pages/Pousada/pousada";
+import Lavabo from "./component/Pages/Interiores/Lavabo/Lavabo.jsx";
+import AreaGourmet from "./component/Pages/Interiores/AreaGourmet/AreaGourmet.jsx";
+import Contato from "./component/Pages/Contato/Contato";
+import Quartos from "./component/Pages/Interiores/Quartos/Quartos";
+import Quarto_Master from "./component/Pages/Interiores/Quartos/Master/Master.jsx";
+import Quarto_Menina from "./component/Pages/Interiores/Quartos/Menina/Menina.jsx";
+import Quarto_Menino from "./component/Pages/Interiores/Quartos/Menino/Menino.jsx";
+import Pousada from "./component/Pages/Pousada/Pousada.jsx";
 import QuartosPousada from "./component/Pages/Pousada/SuiteComun/QuartosPousada";
-import Cozinha from "./component/Pages/Interiores/Cozinha/cozinha";
-import Escritorio from "./component/Pages/Interiores/Escritorio/escritorio";
-import Sala from "./component/Pages/Interiores/Sala/sala";
-import Outros from "./component/Pages/Interiores/Outros/outros";
-import Area_de_Servico from "./component/Pages/Interiores/Outros/AreaDeServico/areaDeServico";
-import Mostras from "./component/Pages/Mostras/mostras";
+import Cozinha from "./component/Pages/Interiores/Cozinha/Cozinha.jsx";
+import Escritorio from "./component/Pages/Interiores/Escritorio/Escritorio.jsx";
+import Sala from "./component/Pages/Interiores/Sala/Sala.jsx";
+import Outros from "./component/Pages/Interiores/Outros/Outros.jsx";
+import AreaDeServico from "./component/Pages/Interiores/Outros/AreaDeServico/AreaDeServico.jsx";
+import Mostras from "./component/Pages/Mostras/Mostras.jsx";
 
 const PagesRoutes = () => {
     return (

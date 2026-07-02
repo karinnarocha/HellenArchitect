@@ -1,7 +1,7 @@
-import "./outros.css"
-import Hero from "../../../Hero/hero";
-import ImagesGrid from "../../../ImagesGrid/imagesGrid";
-import ImageSlide from "../../../SlideShow/slide";
+import "./Outros.css"
+import Hero from "../../../Hero/Hero";
+import ImagesGrid from "../../../ImagesGrid/ImagesGrid";
+import ImageSlide from "../../../SlideShow/Slide";
 
 import { Link } from "react-router-dom";
 
