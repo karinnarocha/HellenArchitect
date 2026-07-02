@@ -19,11 +19,16 @@ const Hero = ({ image, title, subtitle, ctaText, ctaLink, showScrollIndicator })
         <div className="Hero-section animate__animated animate__slideInDown">
             <img className="Hero-Background" src={image.src} alt={image.title} />
 
-            {!isHomePage && (
+            {!isHomePage && title && (
                 <div className="imageTitleOverlayBackground">
                     <div className="imageTitleOverlayText">
-                        <span className="returnIcon" onClick={() => navigate(-1)}>❰</span>
-                        {image.title}
+                        <div>
+                            <div className="imageTitleOverlayHeadingRow">
+                                <span className="returnIcon" onClick={() => navigate(-1)}>❰</span>
+                                <h1 className="imageTitleOverlayHeading">{title}</h1>
+                            </div>
+                            {subtitle && <p className="imageTitleOverlaySubtitle">{subtitle}</p>}
+                        </div>
                     </div>
                 </div>
             )}

@@ -1,58 +1,63 @@
-.slideStyle{
-    position: relative;
-    box-shadow: 0px 0px 5px 1px #494949;
+.slideStyle {
+  position: relative;
+  box-shadow: 0px 0px 5px 1px #494949;
 
 }
 
-.previousSlide{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    color: white;
-    left: 20px;
-    z-index: 1;
-    cursor: pointer;
-    font-size: 50px;
+.previousSlide {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  left: 20px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 50px;
 
 }
-.nextSlide{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    color: white;
-    right: 20px;
-    z-index: 1;
-    cursor: pointer;
-    font-size: 50px;
+
+.nextSlide {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 50px;
 
 }
-.ImageSlides{
-    width: 100%;
-    height: 100%;
-    position: relative;
+
+.ImageSlides {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.backgroundPhotoPopup{
-    background: rgba(0, 0, 0, 0.7);
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    z-index: 3;
-    position: fixed;
+.backgroundPhotoPopup {
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  position: fixed;
 }
-.backgroundcontent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.backgroundcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Photopopup{
-    max-width: 80%;
-    max-height: 80%;
+
+.Photopopup {
+  max-width: 80%;
+  max-height: 80%;
 }
+
 .slideStyle {
   position: relative;
   box-shadow: 0 0 5px 1px #494949;
@@ -71,7 +76,7 @@
   font-family: "Italiana";
   font-size: 22px;
   z-index: 2;
-  pointer-events: none; /* doesn’t block clicks/hover */
+  pointer-events: none;
 }
 
 /* small image in the grid */

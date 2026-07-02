@@ -55,7 +55,22 @@ const Home = () => {
                 ctaText="Ver portfólio"
                 ctaLink="#portfolio"
             />
-
+            <div className="credentialsStrip">
+                <div className="credentialItem">
+                    <span className="credentialNumber">17</span>
+                    <span className="credentialLabel">anos de experiência</span>
+                </div>
+                <div className="credentialDivider"></div>
+                <div className="credentialItem">
+                    <span className="credentialNumber">5</span>
+                    <span className="credentialLabel">edições da CASACOR</span>
+                </div>
+                <div className="credentialDivider"></div>
+                <div className="credentialItem">
+                    <span className="credentialNumber">+</span>
+                    <span className="credentialLabel">inúmeras mostras de lojas</span>
+                </div>
+            </div>
             <div className="CTAsection">
                 <div className="Meetsection">
                     <div className="background_image"></div>
@@ -76,14 +91,12 @@ const Home = () => {
                 <div className="FinalCTAcard">
                     <h2 className="FinalCTAtitle">Vamos criar o seu projeto</h2>
                     <p className="FinalCTAsubtitle">Conte um pouco sobre o que você sonha para o seu espaço.</p>
-                    <Link to="/Sobre" className="FinalCTAbutton">Agendar conversa</Link>
+                    <Link to="/Contato" className="FinalCTAbutton">Agendar conversa</Link>
                 </div>
             </div>
             <div className="decorationBottomWrapperChafariz">
                 <img src="/images/mainpage/MainPage_Chafariz.webp" alt="decoration" className="decorationBottomChafariz" />
-                <img src="/images/interior_logo.webp" alt="decoration" className="decorationBottom" />
             </div>
-
         </>
     );
 };

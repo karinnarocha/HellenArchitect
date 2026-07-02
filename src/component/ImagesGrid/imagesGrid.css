@@ -15,14 +15,16 @@
   font-family: 'Italiana';
   font-size: 20px;
   z-index: 2;
-  pointer-events: none; /* important: doesn't block click/hover */
+  pointer-events: none;
+  /* important: doesn't block click/hover */
 }
 
 
 /* Your existing grid image style */
 .gridImage {
   width: 100%;
-  height: 40vh;        /* pick a height you like */
+  height: 40vh;
+  /* pick a height you like */
   object-fit: cover;
   display: block;
   border-radius: 5px;
@@ -33,25 +35,3 @@
 .gridCardWrapper:hover .gridImage {
   transform: scale(1.02);
 }
-
-.decorationBottomWrapperChafariz{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    gap:7vh;
-    padding:20% 0 0 0 ;
-}
-.decorationBottomChafariz{
-    width: 15%;
-}
-.decorationBottom{
-    width: 60%;
-}
-
-@media screen and (max-width: 800px){
-    .decorationBottomWrapperChafariz{
-    padding:40% 0 0 0 ;
-}
-}
-

@@ -1,4 +1,4 @@
-.central{
+.central {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -9,15 +9,15 @@
 .imageGridArquitetura {
     display: grid;
     grid-template-columns: repeat(2, 3fr);
-    grid-template-rows: repeat(2, 2fr) ;
-    gap:10%;
+    grid-template-rows: repeat(2, 2fr);
+    gap: 10%;
     padding: 15% 15% 10% 15%;
 }
 
 
 /* ------ BUTTON CSS  -----*/
 
-.OrcamentoButton{
+.OrcamentoButton {
     height: 50px;
     width: 200px;
     padding: 10px 20px;
@@ -29,13 +29,14 @@
     text-decoration: none;
     cursor: pointer;
     box-shadow: 2px 1px 8px 2px #a7a4a4;
-    display: flex ;
+    display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 
 }
-@media screen and (max-width: 800px){
-  .imageGridArquitetura {
-    padding: 20% 5% 10% 5%;
-}
+
+@media screen and (max-width: 800px) {
+    .imageGridArquitetura {
+        padding: 20% 5% 10% 5%;
+    }
 }

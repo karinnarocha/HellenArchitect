@@ -17,8 +17,8 @@ const Navbar = () => {
 
       {/* ===== TOP RIGHT CONTACT BUTTON ===== */}
       <div className="contactTop">
-        <a href="tel:+17322177735" className="contactBtn">
-          (732) 217-7735
+        <a href="tel:+5527998362237" className="contactBtn">
+          (27) 99836-2237
         </a>
       </div>
       {/* ===== LINKS CONTAINER ===== */}

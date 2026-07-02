@@ -1,47 +1,153 @@
-.sobreContainer{
-    margin: 15%;
+.sobreContainer {
+    margin: 0 15% 15%;
 }
-.sobreTitleContainer{
+
+/* ---------- CREDENTIALS STRIP ---------- */
+
+.credentialsStrip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 4% 0 4%;
+    flex-wrap: wrap;
+}
+
+.credentialItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.credentialNumber {
+    font-family: "Italiana";
+    font-size: 4rem;
+    color: #3d3d3d;
+    line-height: 1;
+}
+
+.credentialLabel {
+    font-family: "Italiana";
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 6px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+
+.credentialDivider {
+    width: 1px;
+    height: 40px;
+    background: #d8d4cc;
+}
+
+/* ---------- TITLE ---------- */
+
+.sobreTitleContainer {
     color: #3d3d3d;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
+    padding-bottom: 2%;
 }
-.ContentContainer{
+
+.ContentContainer {
     display: flex;
     flex-direction: column;
 }
-.sobreContentRow{
+
+.sobreContentRow {
     display: flex;
     flex-direction: row;
-    padding: 5% 0 5% 0;
+    padding: 4% 0;
     justify-content: center;
-    
+    align-items: center;
 }
-.textSobre{
+
+.textSobre {
     display: flex;
     justify-items: center;
-    padding: 0 5% 0 5%;
+    padding: 0 5%;
     text-align: justify;
     width: 550px;
-
+    line-height: 1.7;
 }
-.photosSobre{
+
+.photosSobre {
     display: flex;
     align-self: center;
     height: 470px;
     width: 400px;
-    padding: 0 5% 0 5%;
-
-}
-.logo{
-    padding-top: 15%;
-
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 0 5%;
 }
 
-@media (max-width: 768px){
-    .sobreContentRow{
-        display: flex;
+/* ---------- SIGNATURE CALLOUT ---------- */
+
+.signatureCallout {
+    text-align: center;
+    padding: 3% 0;
+    border-top: 1px solid #e4e1d8;
+    border-bottom: 1px solid #e4e1d8;
+    margin: 2% 0;
+}
+
+.signatureLabel {
+    font-family: "Italiana";
+    font-size: 0.95rem;
+    color: #888;
+    margin: 0 0 8px;
+    font-weight: 700;
+}
+
+.signaturePhrase {
+    font-family: "Italiana";
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    color: #3d3d3d;
+    font-style: italic;
+    margin: 0 0 8px;
+    font-weight: 700;
+}
+
+.signatureSub {
+    font-family: "Italiana";
+    font-size: 0.95rem;
+    color: #888;
+    margin: 0;
+    font-weight: 700;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+
+@media (max-width: 768px) {
+    .sobreContainer {
+        margin: 0 6% 15%;
+    }
+
+    .sobreContentRow {
         flex-direction: column;
+    }
+
+    .textSobre {
+        width: 100%;
+        padding: 4% 0;
+    }
+
+    .photosSobre {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        padding: 0;
+    }
+
+    .credentialsStrip {
+        gap: 20px;
     }
 }
