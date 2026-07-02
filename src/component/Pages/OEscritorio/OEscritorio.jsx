@@ -2,7 +2,7 @@
 import React from "react";
 import Hero from "../../Hero/hero";
 import ImagesGrid from "../../ImagesGrid/imagesGrid";
-import "./Escritorio.css";
+import "./OEscritorio.css";
 import { Link } from "react-router-dom";
 
 
