@@ -19,7 +19,9 @@ const lavaboGrid = [
 const Lavabo = () => {
     return (
         <>
-            <Hero image={Hero_Lavabo[0]} />
+            <Hero image={Hero_Lavabo[0]}
+                title="Lavabo"
+                subtitle="Lavabos que surpreendem visitas com sofisticação em poucos metros quadrados." />
             <div className="GridContainer">
                 <ImagesGrid images={lavaboGrid} wrapperClassName="imageGridLavabo" />
             </div>

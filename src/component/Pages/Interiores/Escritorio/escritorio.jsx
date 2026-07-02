@@ -35,7 +35,10 @@ const Escritorio4 = [
 const Escritorio = () => {
     return (
         <>
-            <Hero image={Hero_Escritorio[0]} />
+            <Hero image={Hero_Escritorio[0]}
+                title="Escritório"
+                subtitle="Ambientes de trabalho em casa projetados para produtividade, conforto e estilo."
+            />
             <div className="imageGridEscritorio ">
                 <ImageSlide label="Escritorio 1" slides={Escritorio1} />
                 <ImageSlide label="Escritorio 2" slides={Escritorio2} />

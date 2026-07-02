@@ -2,6 +2,7 @@
 import React from "react";
 import Hero from "../../Hero/Hero";
 import ImageSlide from "../../SlideShow/Slide";
+import ImagesGrid from "../../ImagesGrid/ImagesGrid";
 import { Link } from "react-router-dom";
 
 import "./Mostras.css";
@@ -24,14 +25,14 @@ const CANTO_ENCANTO_2016 = [
 ];
 
 const Canto_Encanto_2017 = [
+  { src: "images/Mostras/Canto_Encanto_2017/04.webp", title: "Canto_Encanto_2017", index: 3 },
   { src: "images/Mostras/Canto_Encanto_2017/01.webp", title: "Canto_Encanto_2017", index: 0 },
   { src: "images/Mostras/Canto_Encanto_2017/02.webp", title: "Canto_Encanto_2017", index: 1 },
   { src: "images/Mostras/Canto_Encanto_2017/03.webp", title: "Canto_Encanto_2017", index: 2 },
-  { src: "images/Mostras/Canto_Encanto_2017/04.webp", title: "Canto_Encanto_2017", index: 3 },
 ];
 const CANTO_ENCANTO_2018 = [
-  { src: "images/Mostras/CANTO_ENCANTO_2018/01.webp", title: "CANTO_ENCANTO_2018", index: 0 },
-  { src: "images/Mostras/CANTO_ENCANTO_2018/02.webp", title: "CANTO_ENCANTO_2018", index: 1 },
+  { src: "images/Mostras/CANTO_ENCANTO_2018/02.webp", title: "CANTO_ENCANTO_2018", index: 0 },
+  { src: "images/Mostras/CANTO_ENCANTO_2018/01.webp", title: "CANTO_ENCANTO_2018", index: 1 },
   { src: "images/Mostras/CANTO_ENCANTO_2018/03.webp", title: "CANTO_ENCANTO_2018", index: 2 },
 ];
 

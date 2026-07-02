@@ -29,10 +29,14 @@ const QuartoMaster_four = [
     { src: "images/Quartos/Master/4/Quarto4_3.webp", title: "QuartoMaster3", index: 2 },
     { src: "images/Quartos/Master/4/Quarto4_4.webp", title: "QuartoMaster4", index: 3 },
 ];
-const Quarto_Master = () => {
+const QuartoMaster = () => {
     return (
         <>
-            <Hero image={Hero_QuartoMaster[0]} />
+            <Hero
+                image={Hero_QuartoMaster[0]}
+                title="Quarto Master"
+                subtitle="Suítes master projetadas para conforto, amplitude e sofisticação no seu dia a dia."
+            />
             <div className="imageGridQuartoMaster">
                 <ImageSlide slides={QuartoMaster_um} />
                 <ImageSlide slides={QuartoMaster_two} />
@@ -50,4 +54,4 @@ const Quarto_Master = () => {
     );
 };
 
-export default Quarto_Master;
+export default QuartoMaster;

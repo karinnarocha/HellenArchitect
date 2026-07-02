@@ -25,10 +25,14 @@ const QuartoMenino_three = [
     { src: "images/Quartos/Menino/03/QuartoMenino03_3.webp", title: "QuartoMenino3", index: 2 },
 ];
 
-const Quarto_Menino = () => {
+const QuartoMenino = () => {
     return (
         <>
-            <Hero image={Hero_QuartoMenino[0]} />
+            <Hero
+                image={Hero_QuartoMenino[0]}
+                title="Quarto de Menino"
+                subtitle="Quartos infantis masculinos pensados para conforto, praticidade e identidade."
+            />
             <div className="imageGridQuartoMenino">
                 <ImageSlide slides={QuartoMenino_um} />
                 <ImageSlide slides={QuartoMenino_two} />
@@ -45,4 +49,4 @@ const Quarto_Menino = () => {
     );
 };
 
-export default Quarto_Menino;
+export default QuartoMenino;

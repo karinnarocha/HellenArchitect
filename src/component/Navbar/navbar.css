@@ -2,14 +2,15 @@
 
 .navbar {
     background-color: lightgray;
-    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
     position: sticky;
     top: 0;
     height: 8vh;
     z-index: 2;
 
     /* NEW */
-    padding-top: 60px; /* space for contact button */
+    padding-top: 60px;
+    /* space for contact button */
     position: relative;
 }
 
@@ -40,7 +41,7 @@
 
 /* ------ NAVBAR CONTAINER ----- */
 
-.navbarcontainer{
+.navbarcontainer {
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -48,8 +49,8 @@
 
 /* ------ LOGO ----- */
 
-.LogoSpace{
-    width: 40vw;
+.LogoSpace {
+    width: 30vw;
     max-height: 350px;
     display: flex;
     justify-content: center;
@@ -58,7 +59,7 @@
     left: 1%;
 }
 
-.LogoImage{
+.LogoImage {
     height: auto;
     object-fit: contain;
     position: relative;
@@ -66,24 +67,24 @@
     width: 15vw;
 }
 
-.LogoImageMain{
+.LogoImageMain {
     width: 100%;
     height: auto;
     object-fit: contain;
     position: relative;
-    top: -30%;
+    top: -40%;
     z-index: -1;
 }
 
 /* ------ LINKS ----- */
 
-.LinksContainer{
+.LinksContainer {
     float: right;
     height: 8vh;
     align-content: center;
 }
 
-.navbar-links{
+.navbar-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -95,14 +96,14 @@
 }
 
 .navbar-links a,
-.navbar-links a:visited{
+.navbar-links a:visited {
     text-decoration: none;
     color: #464444;
 }
 
 /* -------- DROPDOWN BUTTON (☰) -------- */
 
-.dropdownMenuIcon{
+.dropdownMenuIcon {
     display: none;
     background: none;
     cursor: pointer;
@@ -135,7 +136,7 @@
     padding: 10px 0;
     margin: 0;
     min-width: 180px;
-    box-shadow: 0px 3px 5px rgba(0,0,0,.2);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .2);
     z-index: 1000;
 }
 
@@ -150,10 +151,11 @@
 
 /* -------- MOBILE -------- */
 
-@media (max-width: 768px){
-    .LogoSpace{
-    width: 100vw;
-}
+@media (max-width: 768px) {
+    .LogoSpace {
+        width: 100vw;
+    }
+
     .contactTop {
         right: 20px;
         top: 10px;
@@ -164,7 +166,7 @@
         font-size: 0.9rem;
     }
 
-    .dropdownMenuIcon{
+    .dropdownMenuIcon {
         display: block;
         padding-right: 10%;
         background: none;
@@ -172,10 +174,10 @@
         cursor: pointer;
     }
 
-    .navbar-links{
+    .navbar-links {
         position: fixed;
         top: 6vh;
-        right: 0; 
+        right: 0;
         background: lightgray;
         display: flex;
         flex-direction: column;
@@ -187,11 +189,11 @@
         z-index: 1000 !important;
     }
 
-    .navbar-links.open{
+    .navbar-links.open {
         transform: translateX(0);
     }
 
-    .dropdown-menu{
+    .dropdown-menu {
         position: relative;
         box-shadow: none;
     }

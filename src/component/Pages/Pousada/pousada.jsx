@@ -48,7 +48,6 @@ const PiscinaSlide = [
   { src: "images/Pousada/PISCINA/01.webp", title: "Piscina 1", index: 0 },
   { src: "images/Pousada/PISCINA/02.webp", title: "Piscina 2", index: 1 },
   { src: "images/Pousada/PISCINA/03.webp", title: "Piscina 3", index: 2 },
-
 ];
 
 const Quartos = [
@@ -70,7 +69,6 @@ const Pousada = () => {
         <ImageSlide label="Lavabo" slides={LavaboSlide} />
         <ImageSlide label="Interior" slides={InteriorSlide} />
         <ImageSlide label="Piscina" slides={PiscinaSlide} />
-        <ImagesGrid images={Quartos} />
       </div>
 
       <div className="FinalCTAsection">

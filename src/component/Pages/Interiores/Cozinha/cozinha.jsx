@@ -62,7 +62,9 @@ const Cozinha8 = [
 const Cozinha = () => {
     return (
         <>
-            <Hero image={Hero_Cozinha[0]} />
+            <Hero image={Hero_Cozinha[0]}
+                title="Cozinha"
+                subtitle="Cozinhas planejadas com praticidade no dia a dia e identidade em cada detalhe." />
             <div className="imageGridCozinha">
                 <ImageSlide label="Cozinha 1" slides={Cozinha1} />
                 <ImageSlide label="Cozinha 2" slides={Cozinha2} />

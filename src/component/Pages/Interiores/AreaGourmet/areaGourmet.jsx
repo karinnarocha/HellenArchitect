@@ -30,7 +30,10 @@ const AreaGourmet_three = [
 const AreaGourmet = () => {
     return (
         <>
-            <Hero image={Hero_AreaGourmet[0]} />
+            <Hero image={Hero_AreaGourmet[0]}
+                title="Área Gourmet"
+                subtitle="Projetos de área gourmet que unem funcionalidade e sofisticação para reunir família e amigos."
+            />
             <div className="imageGridAreaGourmet">
                 <ImageSlide slides={AreaGourmet_one} />
                 <ImageSlide slides={AreaGourmet_two} />

@@ -47,7 +47,9 @@ const Pub = [
 const Outros = () => {
     return (
         <>
-            <Hero image={Hero_Outros[0]} />
+            <Hero image={Hero_Outros[0]}
+                title="Outros Ambientes"
+                subtitle="Projetos de interiores para espaços únicos, adaptados às necessidades de cada cliente." />
             <div className="imageGridOutros">
                 <ImagesGrid label="Area de Serviço" images={Area_de_Servico} />
                 <ImageSlide label="Escada" slides={Escada} />

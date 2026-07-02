@@ -28,10 +28,14 @@ const QuartoMenina_four = [
     { src: "images/Quartos/Menina/PRAIA/QuartoMenina04_2.webp", title: "QuartoMenina2", index: 1 },
     { src: "images/Quartos/Menina/PRAIA/QuartoMenina04_3.webp", title: "QuartoMenina3", index: 2 },
 ];
-const Quarto_Menina = () => {
+const QuartoMenina = () => {
     return (
         <>
-            <Hero image={Hero_QuartoMenina[0]} />
+            <Hero
+                image={Hero_QuartoMenina[0]}
+                title="Quarto de Menina"
+                subtitle="Quartos infantis femininos que unem delicadeza, funcionalidade e personalidade."
+            />
             <div className="imageGridQuartoMenina">
                 <ImageSlide slides={QuartoMenina_um} />
                 <ImageSlide slides={QuartoMenina_two} />
@@ -49,4 +53,4 @@ const Quarto_Menina = () => {
     );
 };
 
-export default Quarto_Menina;
+export default QuartoMenina;

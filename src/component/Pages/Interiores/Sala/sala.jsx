@@ -74,7 +74,12 @@ const Sala9 = [
 const Sala = () => {
     return (
         <>
-            <Hero image={Hero_Sala[0]} />
+            {/* Sala */}
+            <Hero
+                image={Hero_Sala[0]}
+                title="Sala de Estar"
+                subtitle="Salas de estar que unem conforto e sofisticação para reunir quem você ama."
+            />
             <div className="imageGridSala">
                 <ImageSlide label="" slides={Sala1} />
                 <ImageSlide label="" slides={Sala2} />
