@@ -10,7 +10,7 @@ const Hero_Outros = [
 ];
 
 const Area_de_Servico = [
-    { src: "/images/interior/Outros/Area_de_servico/01/03.webp", title: "Area de Serviço", link: "/Area_de_Servico" },
+    { src: "/images/interior/Outros/Area_de_servico/01/03.webp", title: "Area de Serviço", link: "/AreaDeServico" },
 ];
 
 const Escada = [

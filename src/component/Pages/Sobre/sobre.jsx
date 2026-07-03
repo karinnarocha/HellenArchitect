@@ -58,7 +58,7 @@ const Sobre = () => {
                     </div>
 
                     <div className="sobreContentRow">
-                        <img className="photosSobre" src="../../images/Sobre/Hellen_photo2.webp" alt="Hellen Rocha analisando projeto de interiores" />
+                        <img className="photosSobre" src="../../images/Sobre/hellen_photo2.webp" alt="Hellen Rocha analisando projeto de interiores" />
                         <div className="textSobre">
                             Mas vamos destacar aqui duas coisas que não abro mão: praticidade e identidade, que, para mim, estão nos detalhes! Sou uma pessoa observadora, com o olhar treinado! Gosto de fazer uma leitura das pessoas antes de começar qualquer projeto, porque assim consigo transmitir o que o cliente realmente precisa.
                             <br /><br />

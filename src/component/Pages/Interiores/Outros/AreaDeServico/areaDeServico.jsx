@@ -31,15 +31,23 @@ const Area_de_Servico_four = [
 const AreaDeServico = () => {
     return (
         <>
-            <Hero image={Hero_Area_de_Servico[0]} />
+            <Hero
+                image={Hero_Area_de_Servico[0]}
+                title="Área de Serviço"
+                subtitle="Espaços de serviço planejados para praticidade e organização no dia a dia."
+            />
             <div className="imageGridArea_de_Servico">
                 <ImageSlide slides={Area_de_Servico_um} />
                 <ImageSlide slides={Area_de_Servico_two} />
                 <ImageSlide slides={Area_de_Servico_three} />
                 <ImageSlide slides={Area_de_Servico_four} />
             </div>
-            <div className="central">
-                <Link to='/Contato' className="OrcamentoButton">Orçamento</Link>
+            <div className="FinalCTAsection">
+                <div className="FinalCTAcard">
+                    <h2 className="FinalCTAtitle">Vamos organizar o seu espaço</h2>
+                    <p className="FinalCTAsubtitle">Uma área de serviço planejada para facilitar sua rotina com praticidade e estilo.</p>
+                    <Link to="/Contato" className="FinalCTAbutton">Solicitar orçamento</Link>
+                </div>
             </div>
         </>
     );
