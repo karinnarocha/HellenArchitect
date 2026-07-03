@@ -37,7 +37,7 @@ const Footer = () => {
             <p>
               R. Manoel Vivácqua, 285<br />
               Jabour, Vitória - ES<br />
-              29072-230, Brazil
+              29072-230, Brasil
             </p>
           </div>
 

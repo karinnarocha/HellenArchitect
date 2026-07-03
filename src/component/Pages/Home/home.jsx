@@ -18,7 +18,7 @@ const homeGrid = [
     { src: "../../images/mainpage/Interiores_mainpage.webp", title: "Interiores", className: " gallery__item--1", link: "/Interiores" },
     { src: "../../images/mainpage/MainPage_Arquitetura.webp", title: "Arquitetura", className: "gallery__item--2", link: "/Arquitetura" },
     { src: "../../images/mainpage/MainPage_Pousada.webp", title: "Pousada", className: "gallery__item--3", link: "/Pousada" },
-    { src: "../../images/mainpage/MainPage_Mostras.webp", title: "Mostras", className: "gallery__item--4", link: "/Mostras" },
+    { src: "../../images/mainpage/Mainpage_mostras.webp", title: "Mostras", className: "gallery__item--4", link: "/Mostras" },
     { src: "../../images/mainpage/MainPage_OEscritorio.webp", title: "O Escritorio", className: "gallery__item--5", link: "/OEscritorio" },
 ];
 
@@ -55,36 +55,9 @@ const Home = () => {
                 ctaText="Ver portfólio"
                 ctaLink="#portfolio"
             />
-            <div className="credentialsStrip">
-                <div className="credentialItem">
-                    <span className="credentialNumber">17</span>
-                    <span className="credentialLabel">anos de experiência</span>
-                </div>
-                <div className="credentialDivider"></div>
-                <div className="credentialItem">
-                    <span className="credentialNumber">5</span>
-                    <span className="credentialLabel">edições da CASACOR</span>
-                </div>
-                <div className="credentialDivider"></div>
-                <div className="credentialItem">
-                    <span className="credentialNumber">+</span>
-                    <span className="credentialLabel">inúmeras mostras de lojas</span>
-                </div>
-            </div>
-            <div className="CTAsection">
-                <div className="Meetsection">
-                    <div className="background_image"></div>
-                    <div className="QuoteSection">
-                        <h2 className="Quote animate__fadeIn">"Traduzo quem você é em espaços que fazem sentido. Uma arquitetura guiada pela sensibilidade, pela matéria e por escolhas conscientes, onde sofisticação e alma caminham juntas."</h2>
-                        <div className="central">
-                            <Link to='/Sobre' className="OrcamentoButton">Sobre Hellen Rocha</Link>                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div id="portfolio">
-                <h2 className="homeTitle animate__fadeIn">Portifólio</h2>
-                <h3 className="homeSubtitle animate__fadeIn">Explore o nossos projetos menu</h3>
+                <h2 className="homeTitle animate__fadeIn">Portfólio</h2>
+                <h3 className="homeSubtitle animate__fadeIn">Explore os nossos projetos menu</h3>
                 <ImageGrid images={homeGrid} wrapperClassName="imageGridHome" />
             </div>
             <div className="FinalCTAsection">
@@ -95,7 +68,17 @@ const Home = () => {
                 </div>
             </div>
             <div className="decorationBottomWrapperChafariz">
-                <img src="/images/mainpage/MainPage_Chafariz.webp" alt="decoration" className="decorationBottomChafariz" />
+                <img src="/images/mainpage/MainPage_chafariz.webp" alt="decoration" className="decorationBottomChafariz" />
+            </div>
+            <div className="CTAsection">
+                <div className="Meetsection">
+                    <div className="background_image"></div>
+                    <div className="QuoteSection">
+                        <h2 className="Quote animate__fadeIn">"Traduzo quem você é em espaços que fazem sentido. Uma arquitetura guiada pela sensibilidade, pela matéria e por escolhas conscientes, onde sofisticação e alma caminham juntas."</h2>
+                        <div className="central">
+                            <Link to="/Contato" className="FinalCTAbutton">Fale Conosco!</Link>                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
