@@ -76,7 +76,7 @@ const Home = () => {
                     <div className="QuoteSection">
                         <h2 className="Quote animate__fadeIn">"Traduzo quem você é em espaços que fazem sentido. Uma arquitetura guiada pela sensibilidade, pela matéria e por escolhas conscientes, onde sofisticação e alma caminham juntas."</h2>
                         <div className="central">
-                            <Link to="/Contato" className="FinalCTAbutton">Fale Conosco!</Link>                        </div>
+                            <Link to="/Contato" className="FinalCTAbutton">Agendar Conversa.</Link>                        </div>
                     </div>
                 </div>
             </div>
