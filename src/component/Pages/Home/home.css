@@ -41,7 +41,6 @@
     flex-direction: row;
     align-self: center;
     justify-self: center;
-    gap: 4%;
 }
 
 .background_image {
@@ -52,11 +51,11 @@
 }
 
 .QuoteSection {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    justify-content: center;
+    align-self: center;
+    justify-items: start;
 }
 
 .Quote {
@@ -203,6 +202,10 @@
 @media screen and (max-width: 800px) {
     .imageGridHome {
         padding: 10% 5%;
+    }
+
+    .FinalCTAsection {
+        padding-top: 5%;
     }
 
     .CTAsection {
