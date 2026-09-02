@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="/Pousada" className="footer-link">Pousada</a>
             <a href="/Mostras" className="footer-link">Mostras</a>
             <a href="/Sobre" className="footer-link">Sobre</a>
-            <a href="/Nosso Escritório" className="footer-link">Nosso Escritório</a>
+            <a href="/OEscritorio" className="footer-link">Nosso Escritório</a>
           </div>
           <p>
             "Casas que sustentam a vida — não só a estética."
