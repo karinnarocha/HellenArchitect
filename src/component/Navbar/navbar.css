@@ -50,13 +50,17 @@
 /* ------ LOGO ----- */
 
 .LogoSpace {
-    width: 30vw;
+    width: 30%;
+    min-width: 150px;
     max-height: 350px;
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: visible;
     left: 1%;
+
+
+    overflow-y: visible;
+    /* keep the vertical spill over the hero */
 }
 
 .LogoImage {
@@ -68,7 +72,8 @@
 }
 
 .LogoImageMain {
-    width: 100%;
+    width: clamp(200px, 22vw, 400px);
+    /* was clamp(220px, 26vw, 480px) */
     height: auto;
     object-fit: contain;
     position: relative;
@@ -87,12 +92,15 @@
 .navbar-links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 8%;
-    padding-right: 50%;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding-right: clamp(20px, 5vw, 60px);
+    margin-left: clamp(180px, 22vw, 260px);
+    /* reserves space for the logo icon */
+    font-size: clamp(0.85rem, 1.2vw, 1.2rem);
     list-style: none;
-    transform: translateX(0);
 }
 
 .navbar-links a,
