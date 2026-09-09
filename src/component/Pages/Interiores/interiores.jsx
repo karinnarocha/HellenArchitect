@@ -37,7 +37,7 @@ const Interior = () => {
                 </div>
             </div>
             <div className="decorationBottomWrapperChafariz">
-                <img src="/images/mainpage/MainPage_Chafariz.webp" alt="decoration" className="decorationBottomChafariz" />
+                <img src="/images/mainpage/MainPage_chafariz.webp" alt="decoration" className="decorationBottomChafariz" />
             </div>
         </>
     );

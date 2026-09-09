@@ -25,7 +25,7 @@ const Footer = () => {
             <a href="/OEscritorio" className="footer-link">Nosso Escritório</a>
           </div>
           <p>
-            "Casas que sustentam a vida — não só a estética."
+            "Casas que sustentam a vida, não só a estética."
           </p>
         </div>
 
